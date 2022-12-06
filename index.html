@@ -72,363 +72,192 @@
             <tbody>
 
 
-              <!-- CRAFT -->
+              <!-- Diversity vs. Recognizability -->
               <tr>
                 <td>
                   <div>
-                    <img src='images/craft_miniature.jpg' loading="lazy">
+                    <img src='images/DIVAC.png' loading="lazy">
                   </div>
                 </td>
                 <td>
                   <div class="title">
-                    CRAFT: Concept Recursive Activation FacTorization
+                    Diversity vs. Recognizability: Human-like generalization in one-shot generative models 
                   </div>
                   <div class="authors">
-                    <strong>Thomas Fel*</strong>, Agustin Picard*, Louis Béthune*, Thibaut Boissin*,
-                    David Vigouroux, Julien Colin, Rémi Cadène, Thomas Serre
-                  </div>
-                  <div class="conference">Under review, 2022</div>
-                  <div class="links">
-                    <!-- <a href="https://arxiv.org/abs/2112.04417">Article</a> -->
-                  </div>
-
-                  <p class="resume">
-                    Despite their considerable potential, concept-based explainability methods have received relatively
-                    little attention,
-                    and explaining what’s driving models’ decisions and where it’s located in the input is still an open
-                    problem.
-                    To tackle this, we revisit unsupervised concept extraction techniques for explaining the decisions
-                    of deep neural networks and present CRAFT
-                    – a framework to generate concept-based explanations for understanding individual predictions and
-                    the model’s high-level logic for whole classes.
-                    CRAFT takes advantage of a novel method for recursively decomposing higher-level concepts into more
-                    elementary ones, combined with a
-                    novel approach for better estimating the importance of identified concepts with Sobol indices.
-                    Furthermore, we show how implicit differentiation can be used to generate concept-wise attribution
-                    explanations for individual images.
-                    We further demonstrate through fidelity metrics that our proposed concept importance estimation
-                    technique is more faithful to the model than previous methods,
-                    and, through human psychophysic experiments, we confirm that our recursive decomposition can
-                    generate meaningful and accurate concepts.
-                    Finally, we illustrate CRAFT’s potential to enable the understanding of predictions of trained
-                    models on multiple use-cases by
-                    producing meaningful concept-based explanations.
-                  </p>
-                </td>
-              </tr>
-
-
-
-              <!-- Harmonization -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/harmonization_miniature.jpg' loading="lazy">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Harmonizing the object recognition strategies of deep neural networks with humans
-                  </div>
-                  <div class="authors">
-                    <strong>Thomas Fel*</strong>, Ivan Felipe*, Drew Linsley*, Thomas Serre
+                    <strong>Victor Boutin*</strong>, Lakshya Singhal, Xavier Thomas,, Thomas Serre
                   </div>
                   <div class="conference"><span class="badge">NeurIPS</span> Proceedings of the Conference on Neural
                     Information Processing Systems, 2022</div>
                   <div class="links">
-                    <!-- <a href="https://arxiv.org/abs/2112.04417">Article</a> -->
-                    <a href="https://serre-lab.github.io/Harmonization/">Website</a> /
-                    <a href="https://github.com/serre-lab/harmonization">Code</a>
+                    <a href="https://arxiv.org/abs/2205.10370">Article</a>
+                    <a href="https://github.com/serre-lab/diversity_vs_recognizability">Code</a>
                   </div>
 
                   <p class="resume">
-                    The many successes of deep neural networks (DNNs) over the past decade have largely been driven by
-                    computational scale rather than insights from biological intelligence.
-                    Here, we explore if these trends have also carried concomitant improvements in explaining the visual
-                    strategies humans rely on for object recognition.
-                    We do this by comparing two related but distinct properties of visual strategies in humans and DNNs:
-                    where they believe important visual features are in images and how they use those features to
-                    categorize objects.
-                    Across 84 different DNNs trained on ImageNet and three independent datasets measuring the where and
-                    the how of human visual strategies for object recognition on those images,
-                    we find a systematic trade-off between DNN categorization accuracy and alignment with human visual
-                    strategies for object recognition.
-                    State-of-the-art DNNs are progressively becoming less aligned with humans as their accuracy
-                    improves.
-                    We rectify this growing issue with our harmonization loss: a general-purpose training routine that
-                    both aligns DNN and human visual strategies and improves categorization accuracy.
-                    Our work represents the first demonstration that the scaling laws that are guiding the design of
-                    DNNs today have also produced worse models of human vision.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- Human Meta-predictor -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/metapred_miniature.jpg' loading="lazy">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    What I Cannot Predict, I Do Not Understand: A Human-Centered Evaluation Framework for Explainability
-                    Methods
-                  </div>
-                  <div class="authors">
-                    Julien Colin*, <strong>Thomas Fel*</strong>, Rémi Cadène, Thomas Serre.
-                  </div>
-                  <div class="conference"><span class="badge">NeurIPS</span> Proceedings of the Conference on Neural
-                    Information Processing Systems, 2022</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2112.04417">Article</a>
-
-                    <!-- /<a href="https://github.com/deel-ai/xplique">code</a> -->
-                  </div>
-
-                  <p class="resume">
-                    In this work, we conducted psychophysics experiments at scale to evaluate the ability of human
-                    participants to
-                    leverage representative attribution methods for understanding the behavior of different image
-                    classifiers representing
-                    three real-world scenarios: (1) identifying bias, (2) characterizing novel strategy and (3)
-                    understanding failure cases.
-                    Our results demonstrate that the degree to which individual attribution methods help human
-                    participants better
-                    understand an AI system varied widely across these scenarios.
-                    This suggests a critical need for the field to move past quantitative improvements of current
-                    attribution methods.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- HSIC -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/hsic_miniature.png' loading="lazy">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Making Sense of Dependence: Efficient Black-box Explanations Using Dependence Measure
-                  </div>
-                  <div class="authors">
-                    Paul Novello, <strong>Thomas Fel</strong>, David Vigouroux
-                  </div>
-                  <div class="conference"><span class="badge">NeurIPS</span> Proceedings of the Conference on Neural
-                    Information Processing Systems, 2022</div>
-
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2206.06219">Article</a>
-                    /
-                    <a href="https://github.com/deel-ai/xplique">code</a>
-                  </div>
-
-
-                  <p class="resume">
-                    This paper could be seen as a follow-up to Look at the variance and further improves the efficiency
-                    of black-box
-                    methods using Hilbert-Schmidt Independence Criterion (HSIC).
-                    HSIC measures the dependence between regions of an input image and the output of a model based
-                    on kernel embeddings of distributions.
-                    Our experiments show that HSIC is up to 8 times faster than the previous best black-box attribution
-                    methods
-                    while being as faithful.
-                    Importantly, we show that these advances can be transposed to efficiently and faithfully explain
-                    object detection
-                    models such as YOLOv4.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- Formal -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/formal_miniature.png'>
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Don't Lie to Me! Robust and Efficient Explainability with Verified Perturbation Analysis
-                  </div>
-                  <div class="authors">
-                    <strong>Thomas Fel*</strong>, Melanie Ducoffe*, David Vigouroux, Remi Cadene,
-                    Mikael Capelle, Claire Nicodeme, Thomas Serre
-                  </div>
-                  <div class="conference"><span class="badge">ICML</span> Workshop on Formal Verification of Machine
-                    Learning (Oral), 2022</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2112.04417">Article</a>
-
-                    <!-- /<a href="https://github.com/deel-ai/xplique">code</a> -->
-                  </div>
-
-                  <p class="resume">
-                    In this work, we propose the first explainability method based on formal method and therefore able
-                    to meet certification requirements.
-                    Specifically, we introduce EVA (Explaining using Verified perturbation Analysis)
-                    -- the first explainability method guarantee to have an exhaustive exploration of a perturbation
-                    space.
-                    We leverage the beneficial properties of verified perturbation analysis -- time efficiency,
-                    tractability
-                    and guaranteed complete coverage of a manifold -- to efficiently characterize the input variables
-                    that are most
-                    likely to drive the model decision.
-                    We evaluate the approach systematically and demonstrate state-of-the-art results on multiple
-                    benchmarks.
-
+                  Robust generalization to new concepts has long remained a distinctive feature of human intelligence. 
+                  However, recent progress in deep generative models has now led to neural architectures capable of 
+                  synthesizing novel instances of unknown visual concepts from a single training example. Yet, a more 
+                  precise comparison between these models and humans is not possible because existing performance metrics 
+                  for generative models (i.e., FID, IS, likelihood) are not appropriate for the one-shot generation scenario. 
+                  Here, we propose a new framework to evaluate one-shot generative models along two axes: sample recognizability vs. diversity 
+                  (i.e., intra-class variability). Using this framework, we perform a systematic evaluation of representative 
+                  one-shot generative models on the Omniglot handwritten dataset. We first show that GAN-like and VAE-like models 
+                  fall on opposite ends of the diversity-recognizability space. Extensive analyses of the effect of key model parameters 
+                  further revealed that spatial attention and context integration have a linear contribution to the diversity-recognizability trade-off.
+                  In contrast, disentanglement transports the model along a parabolic curve that could be used to maximize recognizability. 
+                  Using the diversity-recognizability framework, we were able to identify models and parameters that closely approximate human data.
                   </p>
                 </td>
               </tr>
 
 
-              <!-- HKR -->
+
+              <!-- POOLING -->
               <tr>
                 <td>
                   <div>
-                    <img src='images/hkr_miniature.jpg' loading="lazy">
+                    <img src='images/POOLING.png' loading="lazy">
                   </div>
                 </td>
                 <td>
                   <div class="title">
-                    When adversarial attacks become interpretable counterfactual explanations
+                    Pooling strategies in V1 can account for the functional and structural diversity across species
                   </div>
                   <div class="authors">
-                    Mathieu Serrurier, Franck Mamalet, <strong>Thomas Fel</strong>, Louis Béthune, Thibaut Boissin
+                    <strong>Victor Boutin*</strong>, Angelo Franciosini, Fréderic Chavane, Laurent U. Perrinet
                   </div>
-                  <div class="conference">Under review, 2022</div>
+                  <div class="journal"><span class="badge">PlosCB</span> Plos Computational Biology, 2022</div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2206.06854">Article</a>
-                    /
-                    <a href="https://github.com/deel-ai/deel-lip">code</a>
+                    <!-- <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010270">Article</a> -->
                   </div>
 
                   <p class="resume">
-                    We argue that, when learning a 1-Lipschitz neural network with the dual loss of an
-                    optimal transportation problem, the gradient of the model is both the direction of
-                    the transportation plan and the direction to the closest adversarial attack. Traveling
-                    along the gradient to the decision boundary is no more an adversarial attack but
-                    becomes a counterfactual explanation, explicitly transporting from one class to
-                    the other. Through extensive experiments on XAI metrics, we find that the simple
-                    saliency map method, applied on such networks, becomes a reliable explanation!
-                    The proposed networks were already known to be certifiably robust, and
-                    we prove that they are also tailored for explainability.
+                    Neurons in the primary visual cortex are selective to orientation with various degrees of selectivity to the spatial phase,
+                    from high selectivity in simple cells to low selectivity in complex cells. Various computational models have suggested a 
+                    possible link between the presence of phase invariant cells and the existence of orientation maps in higher mammals’ V1. 
+                    These models, however, do not explain the emergence of complex cells in animals that do not show orientation maps. 
+                    In this study, we build a theoretical model based on a convolutional network called Sparse Deep Predictive Coding (SDPC) 
+                    and show that a single computational mechanism, pooling, allows the SDPC model to account for the emergence in V1 of 
+                    complex cells with or without that of orientation maps, as observed in distinct species of mammals. In particular, we observed 
+                    that pooling in the feature space is directly related to the orientation map formation while pooling in the retinotopic space 
+                    is responsible for the emergence of a complex cells population. Introducing different forms of pooling in a predictive model 
+                    of early visual processing as implemented in SDPC can therefore be viewed as a theoretical framework that explains the diversity 
+                    of structural and functional phenomena observed in V1.
                   </p>
                 </td>
               </tr>
 
-              <!-- Xplique CVPR -->
+              <!-- IVAE -->
               <tr>
                 <td>
                   <div>
-                    <img src='images/xplique_miniature.png' loading="lazy">
+                    <img src='images/IVAE.png' loading="lazy">
                   </div>
                 </td>
                 <td>
                   <div class="title">
-                    Xplique: A Deep Learning Explainability Toolbox
+                    Iterative VAE as a predictive brain model for out-of-distribution generalization
                   </div>
                   <div class="authors">
-                    <strong>Thomas Fel*</strong>, Lucas Hervier*, David Vigouroux, Antonin Poche, Justin Plakoo,
-                    Remi Cadene, Mathieu Chalvidal, Julien Colin, Thibaut Boissin, Louis Bethune, Agustin Picard, Claire
-                    Nicodeme,
-                    Laurent Gardes, Gregory Flandin, Thomas Serre
+                    <strong>Victor Boutin*</strong>, Aimen Zerroug, Minju Jung, Thomas Serre.
                   </div>
-                  <div class="conference"> <span class="badge">CVPR</span> Workshop on Explainable Artificial
-                    Intelligence for Computer Vision, 2022</div>
+                  <div class="conference"><span class="badge">NeurIPS</span> SVRHM workshop of the Conference on Neural
+                    Information Processing Systems, 2020</div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2206.04394">Article</a>
-                    /
-                    <a href="https://github.com/deel-ai/xplique">code</a>
+                    <a href="https://arxiv.org/pdf/2012.00557">Article</a>
                   </div>
-                  <p class="resume">
-                    For more than a year, I worked alongside my thesis to implement more than fifty explainability
-                    papers.
-                    Xplique is the result of this work, it is a library that I develop and maintain.
 
-                    The library is composed of several modules:
-                    (1) the Attributions Methods module,
-                    (2) The Feature Visualization module,
-                    (3) The Concepts module and
-                    (4) the Metrics module.
+                  <p class="resume">
+                    Our ability to generalize beyond training data to novel, out-of-distribution, 
+                    image degradations is a hallmark of primate vision. The predictive brain, 
+                    exemplified by predictive coding networks (PCNs), has become a prominent neuroscience theory of neural computation. 
+                    Motivated by the recent successes of variational autoencoders (VAEs) in machine learning, we rigorously derive a 
+                    correspondence between PCNs and VAEs. This motivates us to consider iterative extensions of VAEs (iVAEs) as plausible 
+                    variational extensions of the PCNs. We further demonstrate that iVAEs generalize to distributional shifts 
+                    significantly better than both PCNs and VAEs. In addition, we propose a novel measure of recognizability 
+                    for individual samples which can be tested against human psychophysical data. Overall, we hope this work will 
+                    spur interest in iVAEs as a promising new direction for modeling in neuroscience.
                   </p>
                 </td>
               </tr>
 
-              <!-- Sobol NeurIPS -->
+              <!-- SDPC -->
               <tr>
                 <td>
                   <div>
-                    <img src='images/sobol_miniature.png' loading="lazy">
+                    <img src='images/SDPC.png' loading="lazy">
                   </div>
                 </td>
                 <td>
                   <div class="title">
-                    Look at the Variance! Efficient Black-box Explanations with Sobol-based Sensitivity Analysis
+                    Sparse Deep Predictive Coding captures contour integration capabilities of the early visual cortex
                   </div>
                   <div class="authors">
-                    <strong>Thomas Fel*</strong>,
-                    Rémi Cadène*, Mathieu Chalvidal, Matthieu Cord, David Vigouroux, Thomas Serre.
+                    <strong>Victor Boutin</strong>,  Angelo Franciosini, Frédéric Chavane, Franck Ruffier, Laurent U Perrinet
+                  </div>
+                  <div class="conference"><span class="badge">Plos Computational Biology, 2021</span> </div>
+
+                  <div class="links">
+                    <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008629">Article</a>
                   </div>
 
-                  <div class="conference"><span class="badge">NeurIPS</span>Proceedings of the Conference on Neural
-                    Information
-                    Processing Systems, 2021 </div>
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2111.04138">Article</a>
-                    /
-                    <a href="https://github.com/fel-thomas/Sobol-Attribution-Method">code</a>
-                  </div>
+
                   <p class="resume">
-                    We describe a novel and efficient black-box attribution method which is grounded in Sensitivity
-                    Analysis and uses Sobol indices.
-                    Beyond modeling the individual contributions of image regions, Sobol indices provide an efficient
-                    way to capture
-                    higher-order interactions between image regions and their contributions to a neural network's
-                    prediction through
-                    the lens of variance.
+                  Both neurophysiological and psychophysical experiments have pointed out the crucial role of 
+                    recurrent and feedback connections to process context-dependent information in the early visual cortex. 
+                    While numerous models have accounted for feedback effects at either neural or representational level, none of them 
+                    were able to bind those two levels of analysis. Is it possible to describe feedback effects at both levels using the same model?
+                    We answer this question by combining Predictive Coding (PC) and Sparse Coding (SC) into a hierarchical and convolutional 
+                    framework applied to realistic problems. In the Sparse Deep Predictive Coding (SDPC) model, the SC component models the 
+                    internal recurrent processing within each layer, and the PC component describes the interactions between layers using 
+                    feedforward and feedback connections. Here, we train a 2-layered SDPC on two different databases of images, and we interpret 
+                    it as a model of the early visual system (V1 & V2). We first demonstrate that once the training has converged, SDPC exhibits 
+                    oriented and localized receptive fields in V1 and more complex features in V2. Second, we analyze the effects of feedback on 
+                    the neural organization beyond the classical receptive field of V1 neurons using interaction maps. These maps are similar to 
+                    association fields and reflect the Gestalt principle of good continuation. We demonstrate that feedback signals reorganize 
+                    interaction maps and modulate neural activity to promote contour integration. Third, we demonstrate at the representational 
+                    level that the SDPC feedback connections are able to overcome noise in input images. Therefore, the SDPC captures 
+                    the association field principle at the neural level which results in a better reconstruction of blurred images at the 
+                    representational level.
                   </p>
                 </td>
               </tr>
 
-              <!-- Metrics WACV -->
+              <!-- Hierarchical Sparse Coding -->
               <tr>
                 <td>
                   <div>
-                    <img src='images/mege_miniature.png' loading="lazy">
+                    <img src='images/HSC'>
                   </div>
                 </td>
                 <td>
                   <div class="title">
-                    How Good is your Explanation? Algorithmic Stability Measures to Assess the
-                    Quality of Explanations for Deep Neural Networks
+                    Effect of top-down connections in Hierarchical Sparse Coding
                   </div>
                   <div class="authors">
-                    <strong>Thomas Fel</strong>,
-                    David Vigouroux, Rémi Cadène, Thomas Serre.
+                    <strong>Victor Boutin*</strong>, Angelo Franciosini, Franck Ruffier, Laurent U. Perrinet
+                  </div>
+                  <div class="journal"><span class="badge"> Neural Computation</span> Neural Computation 32 (1), 2279 - 2309</div>
+                  <div class="links">
+                    <a href="https://arxiv.org/pdf/2002.00892">Article</a>
+
                   </div>
 
-                  <div class="conference"><span class="badge">WACV</span>Proceedings of the IEEE/CVF Winter Conference
-                    on
-                    Applications of Computer Vision, 2022</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2009.04521">Article</a>
-                    /
-                    <a href="https://github.com/deel-ai/xplique">code</a>
-                  </div>
                   <p class="resume">
-                    We propose two new measures to evaluate explanations borrowed from the field of algorithmic
-                    stability:
-                    mean generalizability MeGe and relative consistency ReCo. We conduct extensive experiments on
-                    different network
-                    architectures, common explainability methods, and several image datasets to demonstrate the benefits
-                    of
-                    the proposed metrics and show that popular fidelity measures are not sufficient to guarantee
-                    trustworthy explanations.
-                    Finally, we found that 1-Lipschitz networks produce explanations with higher MeGe and ReCo than
-                    common neural networks.
+                  Hierarchical Sparse Coding (HSC) is a powerful model to efficiently represent multi- dimensional, 
+                   structured data such as images. The simplest solution to solve this com- putationally hard problem is to decompose 
+                   it into independent layer-wise subproblems. However, neuroscientific evidence would suggest inter-connecting these 
+                    subproblems as in the Predictive Coding (PC) theory, which adds top-down connections between consecutive layers. 
+                    In this study, a new model called 2-Layers Sparse Predictive Coding (2L-SPC) is introduced to assess the impact 
+                    of this inter-layer feedback connection. In particular, the 2L-SPC is compared with a Hierarchical Lasso (Hi-La) 
+                    network made out of a sequence of independent Lasso layers. The 2L-SPC and a 2-layers Hi-La net- works are trained 
+                    on 4 different databases and with different sparsity parameters on each layer. First, we show that the overall 
+                    prediction error generated by 2L-SPC is lower thanks to the feedback mechanism as it transfers prediction 
+                    error between layers. Second, we demonstrate that the inference stage of the 2L-SPC is faster to converge 
+                    than for the Hi-La model. Third, we show that the 2L-SPC also accelerates the learning process. 
+                    Finally, the qualitative analysis of both models dictionaries, supported by their activation probability, 
+                    show that the 2L-SPC features are more generic and informative.
+
                   </p>
                 </td>
               </tr>
@@ -441,14 +270,15 @@
   </table>
   <footer>
     <div>
-      <div>Copyright © 2020 - 2022 Thomas Fel</div>
+      <div>Copyright © 2020 - 2022 Victor Boutin</div>
       <div>Modified from <a href="https://jonbarron.info/">Jon Barron website</a></div>
     </div>
     <div>
-      <a href="mailto:thomas_fel@brown.edu">thomas_fel@brown.edu</a> &nbsp/&nbsp
-      <a href="https://scholar.google.com/citations?hl=en&user=1m5Mlx4AAAAJ">Google Scholar</a> &nbsp/&nbsp
-      <a href="https://twitter.com/napoolar">Twitter</a> &nbsp/&nbsp
-      <a href="https://github.com/fel-thomas/">Github</a>
+      <a href="mailto:victor_boutin@brown.edu">thomas_fel@brown.edu</a> &nbsp/&nbsp
+      <a href="https://scholar.google.com/citations?user=Z-YF5FsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+      <a href="https://twitter.com/VictorBoutin">Twitter</a> &nbsp/&nbsp
+      <a href="https://github.com/VictorBoutin/">Github</a>
+ 
     </div>
   </footer>
 </body>
