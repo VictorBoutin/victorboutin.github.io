@@ -1,283 +1,142 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Victor Boutin</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Victor Boutin">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Victor Boutin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+    header name {
+      font-size: 2em;
+      font-weight: 700;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .intro, .research {
+      margin-bottom: 40px;
+    }
+    .intro img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .intro-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .intro-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .intro-photo {
+      flex: 0 0 200px;
+    }
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .project img {
+      max-width: 280px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    .project-info {
+      flex: 1;
+      min-width: 250px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .authors, .conference, .journal, .links {
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    footer {
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
-  <table class="intro"
-    style="max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Victor Boutin</name>
-                  </p>
-                  <p>Hi 👋 </p>
-                  <p>I am Victor Boutin, a researcher in artificial intelligence and computational neuroscience. I obtained a PhD in the 
-                    <a href="https://www.int.univ-amu.fr">Institute of Neuroscience of Marseille </a>, at the 
-                    Aix-Marseille university. My PhD was supervised by 
-                    <a href="https://laurentperrinet.github.io">Laurent U Perrinet</a>. I did my post-doc with 
-                    <a href="https://serre-lab.clps.brown.edu/person/thomas-serre">Thomas Serre</a> at
-                    <a href="https://aniti.univ-toulouse.fr/en/" class="aniti-txt">ANITI (Toulouse, France)</a>
-                    & <a href="https://serre-lab.clps.brown.edu/" class="brown-txt">Brown University (Boston, USA)</a>. I am now a permanent researcher at CNRS,in the CerCo lab (Toulouse). I work at reverse-engineering generalization in the brain using state-of-the-art deep generative algorithms.
-                  </p>
-                  <p>
-                    I'm interested in Neuroscience and Neuro-Inspired machine learning in general. More specifically, I am interested in 
-                    generative modeling (diffusion models, VAEs, GANs, Auto-regressive models...). I do think that one of the computational 
-                    objective of the brain is to create, train and refine a generative model of the world. The long-term goal of my research 
-                    is to decipher the computation of the brain to design truly intelligent systems.
-                  </p>
+  <header>
+    <name>Victor Boutin</name>
+  </header>
+  <div class="container">
+    <section class="intro">
+      <div class="intro-flex">
+        <div class="intro-text">
+          <p>Hi 👋</p>
+          <p>I am Victor Boutin, a researcher in artificial intelligence and computational neuroscience...</p>
+          <p>I'm interested in neuroscience and neuro-inspired machine learning in general...</p>
+          <p class="links">
+            <a href="mailto:victor_boutin@brown.edu">Email</a>
+            <a href="https://scholar.google.com/citations?user=Z-YF5FsAAAAJ&hl=en">Scholar</a>
+            <a href="https://twitter.com/VictorBoutin">Twitter</a>
+            <a href="https://github.com/VictorBoutin/">GitHub</a>
+          </p>
+        </div>
+        <div class="intro-photo">
+          <img src="images/me.JPG" alt="Victor Boutin">
+        </div>
+      </div>
+    </section>
 
-                  <p style="text-align:center">
-                    <a href="mailto:victor_boutin@brown.edu">victor_boutin@brown.edu</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=Z-YF5FsAAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://twitter.com/VictorBoutin">Twitter</a> &nbsp/&nbsp
-                    <a href="https://github.com/VictorBoutin/">Github</a>
-                  </p>
+    <section class="research">
+      <h2>Research</h2>
 
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%" class="picture">
-                  <img style="width:100%;max-width:100%" alt="profile photo" src="images/me.JPG" class="hoverZoomLink">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="research-table"
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+      <!-- Example Project -->
+      <div class="project">
+        <img src="images/DIVAC.png" alt="Project image">
+        <div class="project-info">
+          <div class="title">Diversity vs. Recognizability...</div>
+          <div class="authors">Victor Boutin*, Lakshya Singhal, Xavier Thomas, Thomas Serre</div>
+          <div class="conference">NeurIPS 2022</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2205.10370">Paper</a>
+            <a href="https://github.com/serre-lab/diversity_vs_recognizability">Code</a>
+          </div>
+          <p class="resume">Robust generalization to new concepts has long remained...</p>
+        </div>
+      </div>
 
+      <!-- Repeat similar <div class="project"> blocks for other publications -->
 
-              <!-- Diversity vs. Recognizability -->
-              <tr>
-                <td>
-                  <div>
-                    <img width="300" src='images/DIVAC.png' loading="lazy">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Diversity vs. Recognizability: Human-like generalization in one-shot generative models 
-                  </div>
-                  <div class="authors">
-                    <strong>Victor Boutin*</strong>, Lakshya Singhal, Xavier Thomas, Thomas Serre
-                  </div>
-                  <div class="conference"><span class="badge">NeurIPS</span> Proceedings of the Conference on Neural
-                    Information Processing Systems, 2022</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/abs/2205.10370">Article</a>
-                    <a href="https://github.com/serre-lab/diversity_vs_recognizability">Code</a>
-                  </div>
+    </section>
+  </div>
 
-                  <p class="resume">
-                  Robust generalization to new concepts has long remained a distinctive feature of human intelligence. 
-                  However, recent progress in deep generative models has now led to neural architectures capable of 
-                  synthesizing novel instances of unknown visual concepts from a single training example. Yet, a more 
-                  precise comparison between these models and humans is not possible because existing performance metrics 
-                  for generative models (i.e., FID, IS, likelihood) are not appropriate for the one-shot generation scenario. 
-                  Here, we propose a new framework to evaluate one-shot generative models along two axes: sample recognizability vs. diversity 
-                  (i.e., intra-class variability). Using this framework, we perform a systematic evaluation of representative 
-                  one-shot generative models on the Omniglot handwritten dataset. We first show that GAN-like and VAE-like models 
-                  fall on opposite ends of the diversity-recognizability space. Extensive analyses of the effect of key model parameters 
-                  further revealed that spatial attention and context integration have a linear contribution to the diversity-recognizability trade-off.
-                  In contrast, disentanglement transports the model along a parabolic curve that could be used to maximize recognizability. 
-                  Using the diversity-recognizability framework, we were able to identify models and parameters that closely approximate human data.
-                  </p>
-                </td>
-              </tr>
-
-
-
-              <!-- POOLING -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/POOLING.png' loading="lazy" width="300">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Pooling strategies in V1 can account for the functional and structural diversity across species
-                  </div>
-                  <div class="authors">
-                    <strong>Victor Boutin*</strong>, Angelo Franciosini, Fréderic Chavane, Laurent U. Perrinet
-                  </div>
-                  <div class="journal"><span class="badge">PlosCB</span> Plos Computational Biology, 2022</div>
-                  <div class="links">
-                    <!-- <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010270">Article</a> -->
-                  </div>
-
-                  <p class="resume">
-                    Neurons in the primary visual cortex are selective to orientation with various degrees of selectivity to the spatial phase,
-                    from high selectivity in simple cells to low selectivity in complex cells. Various computational models have suggested a 
-                    possible link between the presence of phase invariant cells and the existence of orientation maps in higher mammals’ V1. 
-                    These models, however, do not explain the emergence of complex cells in animals that do not show orientation maps. 
-                    In this study, we build a theoretical model based on a convolutional network called Sparse Deep Predictive Coding (SDPC) 
-                    and show that a single computational mechanism, pooling, allows the SDPC model to account for the emergence in V1 of 
-                    complex cells with or without that of orientation maps, as observed in distinct species of mammals. In particular, we observed 
-                    that pooling in the feature space is directly related to the orientation map formation while pooling in the retinotopic space 
-                    is responsible for the emergence of a complex cells population. Introducing different forms of pooling in a predictive model 
-                    of early visual processing as implemented in SDPC can therefore be viewed as a theoretical framework that explains the diversity 
-                    of structural and functional phenomena observed in V1.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- IVAE -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/IVAE.png' loading="lazy" width="300">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Iterative VAE as a predictive brain model for out-of-distribution generalization
-                  </div>
-                  <div class="authors">
-                    <strong>Victor Boutin*</strong>, Aimen Zerroug, Minju Jung, Thomas Serre.
-                  </div>
-                  <div class="conference"><span class="badge">NeurIPS</span> SVRHM workshop of the Conference on Neural
-                    Information Processing Systems, 2020</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/pdf/2012.00557">Article</a>
-                  </div>
-
-                  <p class="resume">
-                    Our ability to generalize beyond training data to novel, out-of-distribution, 
-                    image degradations is a hallmark of primate vision. The predictive brain, 
-                    exemplified by predictive coding networks (PCNs), has become a prominent neuroscience theory of neural computation. 
-                    Motivated by the recent successes of variational autoencoders (VAEs) in machine learning, we rigorously derive a 
-                    correspondence between PCNs and VAEs. This motivates us to consider iterative extensions of VAEs (iVAEs) as plausible 
-                    variational extensions of the PCNs. We further demonstrate that iVAEs generalize to distributional shifts 
-                    significantly better than both PCNs and VAEs. In addition, we propose a novel measure of recognizability 
-                    for individual samples which can be tested against human psychophysical data. Overall, we hope this work will 
-                    spur interest in iVAEs as a promising new direction for modeling in neuroscience.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- SDPC -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/SDPC.png' loading="lazy" width="300">
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Sparse Deep Predictive Coding captures contour integration capabilities of the early visual cortex
-                  </div>
-                  <div class="authors">
-                    <strong>Victor Boutin</strong>,  Angelo Franciosini, Frédéric Chavane, Franck Ruffier, Laurent U Perrinet
-                  </div>
-                  <div class="conference"><span class="badge">Plos Computational Biology, 2021</span> </div>
-
-                  <div class="links">
-                    <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008629">Article</a>
-                  </div>
-
-
-                  <p class="resume">
-                  Both neurophysiological and psychophysical experiments have pointed out the crucial role of 
-                    recurrent and feedback connections to process context-dependent information in the early visual cortex. 
-                    While numerous models have accounted for feedback effects at either neural or representational level, none of them 
-                    were able to bind those two levels of analysis. Is it possible to describe feedback effects at both levels using the same model?
-                    We answer this question by combining Predictive Coding (PC) and Sparse Coding (SC) into a hierarchical and convolutional 
-                    framework applied to realistic problems. In the Sparse Deep Predictive Coding (SDPC) model, the SC component models the 
-                    internal recurrent processing within each layer, and the PC component describes the interactions between layers using 
-                    feedforward and feedback connections. Here, we train a 2-layered SDPC on two different databases of images, and we interpret 
-                    it as a model of the early visual system (V1 & V2). We first demonstrate that once the training has converged, SDPC exhibits 
-                    oriented and localized receptive fields in V1 and more complex features in V2. Second, we analyze the effects of feedback on 
-                    the neural organization beyond the classical receptive field of V1 neurons using interaction maps. These maps are similar to 
-                    association fields and reflect the Gestalt principle of good continuation. We demonstrate that feedback signals reorganize 
-                    interaction maps and modulate neural activity to promote contour integration. Third, we demonstrate at the representational 
-                    level that the SDPC feedback connections are able to overcome noise in input images. Therefore, the SDPC captures 
-                    the association field principle at the neural level which results in a better reconstruction of blurred images at the 
-                    representational level.
-                  </p>
-                </td>
-              </tr>
-
-              <!-- Hierarchical Sparse Coding -->
-              <tr>
-                <td>
-                  <div>
-                    <img src='images/HSC.png' loading="lazy" width="300" >
-                  </div>
-                </td>
-                <td>
-                  <div class="title">
-                    Effect of top-down connections in Hierarchical Sparse Coding
-                  </div>
-                  <div class="authors">
-                    <strong>Victor Boutin*</strong>, Angelo Franciosini, Franck Ruffier, Laurent U. Perrinet
-                  </div>
-                  <div class="journal"><span class="badge"> Neural Computation</span> Neural Computation 32 (1), 2279 - 2309</div>
-                  <div class="links">
-                    <a href="https://arxiv.org/pdf/2002.00892">Article</a>
-
-                  </div>
-
-                  <p class="resume">
-                  Hierarchical Sparse Coding (HSC) is a powerful model to efficiently represent multi- dimensional, 
-                   structured data such as images. The simplest solution to solve this com- putationally hard problem is to decompose 
-                   it into independent layer-wise subproblems. However, neuroscientific evidence would suggest inter-connecting these 
-                    subproblems as in the Predictive Coding (PC) theory, which adds top-down connections between consecutive layers. 
-                    In this study, a new model called 2-Layers Sparse Predictive Coding (2L-SPC) is introduced to assess the impact 
-                    of this inter-layer feedback connection. In particular, the 2L-SPC is compared with a Hierarchical Lasso (Hi-La) 
-                    network made out of a sequence of independent Lasso layers. The 2L-SPC and a 2-layers Hi-La net- works are trained 
-                    on 4 different databases and with different sparsity parameters on each layer. First, we show that the overall 
-                    prediction error generated by 2L-SPC is lower thanks to the feedback mechanism as it transfers prediction 
-                    error between layers. Second, we demonstrate that the inference stage of the 2L-SPC is faster to converge 
-                    than for the Hi-La model. Third, we show that the 2L-SPC also accelerates the learning process. 
-                    Finally, the qualitative analysis of both models dictionaries, supported by their activation probability, 
-                    show that the 2L-SPC features are more generic and informative.
-
-                  </p>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
   <footer>
     <div>
-      <div>Copyright © 2020 - 2022 Victor Boutin</div>
-      <div>Modified from <a href="https://jonbarron.info/">Jon Barron website</a></div>
-    </div>
-    <div>
-      <a href="mailto:victor_boutin@brown.edu">victor_boutin@brown.edu</a> &nbsp/&nbsp
-      <a href="https://scholar.google.com/citations?user=Z-YF5FsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-      <a href="https://twitter.com/VictorBoutin">Twitter</a> &nbsp/&nbsp
-      <a href="https://github.com/VictorBoutin/">Github</a>
- 
+      &copy; 2020 - 2025 Victor Boutin | Modified from <a href="https://jonbarron.info/">Jon Barron's website</a>
     </div>
   </footer>
 </body>
