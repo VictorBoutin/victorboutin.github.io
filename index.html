@@ -11,12 +11,12 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #fafafa;
-      color: #333;
+      background-color: #fff;
+      color: #111;
       line-height: 1.6;
     }
     header, footer {
-      background-color: #f5f5f5;
+      background-color: #fff;
       padding: 20px;
       text-align: center;
     }
@@ -29,8 +29,14 @@
       margin: auto;
       padding: 20px;
     }
-    .intro, .research {
-      margin-bottom: 40px;
+    .intro {
+    margin-bottom: 40px;
+    }
+
+    .research h2 {
+      border-bottom: 3px solid #111;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
     }
     .intro img {
       max-width: 100%;
@@ -62,7 +68,16 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 30px;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
     }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+
     .project img {
       max-width: 280px;
       border-radius: 8px;
@@ -96,15 +111,26 @@
       <div class="intro-flex">
         <div class="intro-text">
           <p>Hi 👋</p>
-          <p> I am Victor Boutin, a researcher in artificial intelligence and computational neuroscience. I obtained a PhD in the <a href="https://www.int.univ-amu.fr"> Institute of Neuroscience of Marseille </a>, at
-                    Aix-Marseille university. My PhD was supervised by
-                    <a href="https://laurentperrinet.github.io">Laurent U Perrinet</a>.  I did my post-doc with
-                    <a href="https://serre-lab.clps.brown.edu/person/thomas-serre">Thomas Serre</a> at
-                    <a href="https://aniti.univ-toulouse.fr/en/" class="aniti-txt">ANITI (Toulouse, France)</a>
-                    & <a href="https://serre-lab.clps.brown.edu/" class="brown-txt">Brown University (Boston, USA)</a>. I am now a permanent researcher at CNRS,in the CerCo lab (Toulouse). I work at reverse-engineering generalization in the brain using state-of-the-art deep generative algorithms.
+          <p> I am a CNRS Research Scientist at <a href="https://cerco.cnrs.fr/"> CerCo </a> (Toulouse) working at the
+            interface of artificial intelligence and computational neuroscience. My research asks a simple question:
+            <b> how does the brain generalize so well from so little data? </b>
 
-            I am Victor Boutin, a researcher in artificial intelligence and computational neuroscience...</p>
-          <p>I'm interested in neuroscience and neuro-inspired machine learning in general...</p>
+            My working hypothesis is that the brain implements an internal generative model of the world.
+            Intuitively, a generative model is like a simulator that captures the rules that produce the data.
+            If you know the rules—not just a list of past examples—you can imagine plausible new cases and predict
+            what you haven’t seen yet (e.g., recognize an object from a new viewpoint after seeing it once).
+
+            To test this hypothesis, I (1) develop mathematical theories of how the brain processes information;
+            (2) implement these theories as deep learning models—especially generative models;
+            and (3) evaluate them against behavioral and neural data.
+
+            I earned my PhD at the <a href="https://www.int.univ-amu.fr"> Institute of Neuroscience of Marseille </a> under
+            the supervision of <a href="https://laurentperrinet.github.io">Laurent U Perrinet</a>. Then I completed a post-doc with
+            <a href="https://serre-lab.clps.brown.edu/person/thomas-serre">Thomas Serre</a> at
+                    <a href="https://aniti.univ-toulouse.fr/en/" class="aniti-txt">ANITI (Toulouse, France)</a>
+                    & <a href="https://serre-lab.clps.brown.edu/" class="brown-txt">Brown University (Providence, USA)</a>.
+            <b> My long-term goal is to reverse-engineer the computations of cognition.</b>
+            </p>
           <p class="links">
             <a href="mailto:victor_boutin@brown.edu">Email</a>
             <a href="https://scholar.google.com/citations?user=Z-YF5FsAAAAJ&hl=en">Scholar</a>
@@ -119,20 +145,229 @@
     </section>
 
     <section class="research">
-      <h2>Research</h2>
+      <h2>Main research articles</h2>
 
-      <!-- Example Project -->
+      <!-- Follow the energy -->
       <div class="project">
-        <img src="images/DIVAC.png" alt="Project image">
+        <img src="images/Neurips2025.png" alt="Project image" width="280" height="280">
         <div class="project-info">
-          <div class="title">Diversity vs. Recognizability...</div>
-          <div class="authors">Victor Boutin*, Lakshya Singhal, Xavier Thomas, Thomas Serre</div>
+          <div class="title">Follow the Energy, Find the Path: Riemannian Metrics from Energy-Based Models</div>
+          <div class="authors">L. Béthune*, D. Vigouroux, Y. Du, R. VanRullen, T. Serre, V. Boutin*</div>
+          <div class="conference">NeurIPS 2025</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2505.18230">Paper</a>
+             <!-- <a href="https://github.com/serre-lab/diversity_vs_recognizability">Code</a> -->
+          </div>
+          <p class="resume"> In this work, we propose a method for deriving Riemannian metrics directly from pretrained
+            Energy-Based Models (EBMs)—a class of generative models that assign low energy to high-density regions.
+            These metrics define spatially varying distances, enabling the computation of geodesics—shortest paths that
+            follow the data manifold's intrinsic geometry. Our work is the first to derive Riemannian
+            metrics from EBMs, enabling data-aware geodesics and unlocking scalable, geometry-driven learning for
+            generative modeling and simulation.</p>
+        </div>
+      </div>
+
+      <!--  Latent Matters -->
+      <div class="project">
+        <img src="images/Neurips2024.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Latent Representation Matters: Human-like Sketches in One-shot Drawing Tasks</div>
+          <div class="authors">V. Boutin*, R. Mukherji, A. Agrawal, S. Muzellec, T. Fel, T. Serre, R. VanRullen</div>
+          <div class="conference">NeurIPS 2024</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2406.06079">Paper</a>
+            <a href="https://github.com/serre-lab/LatentMatters">Code</a>
+          </div>
+          <p class="resume">Humans can effortlessly draw new categories from a single exemplar, a feat that has long
+            posed a challenge for generative models. Here, we study how different inductive biases shape the latent
+            space of Latent Diffusion Models (LDMs). We demonstrate that LDMs with redundancy reduction and prototype-based
+            regularizations produce near-human-like drawings (regarding both samples' recognizability and originality)
+            —better mimicking human perception (as evaluated psychophysically).
+            Overall, our results suggest that the gap between humans and machines in one-shot drawings is almost closed.</p>
+        </div>
+      </div>
+
+      <!--  Saliency Strikes back -->
+      <div class="project">
+        <img src="images/ICML2024.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Saliency strikes back: How filtering out high frequencies improves white-box explanations</div>
+          <div class="authors">S. Muzellec*, T. Fel, V. Boutin, L. andéol, R. VanRullen, T. Serre</div>
+          <div class="conference">ICML 2024</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2307.09591">Paper</a>
+            <a href="https://deel-ai.github.io/xplique/latest/">Code</a>
+          </div>
+          <p class="resume">Attribution methods explain model decisions by scoring input contributions.
+            We show efficient “white-box” methods use gradients polluted by high-frequency artifacts. FORGrad—a simple
+            Fourier low-pass filter with architecture-specific cutoffs—cleans these gradients. Across models,
+            it consistently boosts white-box faithfulness, making them competitive with costlier black-box approaches
+            while staying lightweight.</p>
+        </div>
+      </div>
+
+      <!--  Diffusion models as artist -->
+      <div class="project">
+        <img src="images/ICML2023.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Diffusion Models as Artists: Are we Closing the Gap between Humans and Machines?</div>
+          <div class="authors">V. Boutin*, T. Fel, L. Singhal, R. Mukherji, A. Nagaraj, J. Colin, T. Serre</div>
+          <div class="conference">ICML 2023 (Oral)</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2301.11722">Paper</a>
+            <a href="https://github.com/serre-lab/diffusion_as_artist">Code</a>
+          </div>
+          <p class="resume">An important milestone for AI is the development of algorithms that can produce drawings
+            that are indistinguishable from those of humans. Here, we adapt the 'diversity vs. recognizability' scoring
+            framework from Boutin et al, 2022 and find that one-shot diffusion models have indeed started to close the
+            gap between humans and machines. However, comparing human category diagnostic features, collected through
+            an online psychophysics experiment, against those derived from diffusion models reveals that humans rely on
+            fewer and more localized features. Overall, our study suggests that diffusion models have significantly helped improve the quality of machine-generated
+            drawings; however, a gap between humans and machines remains.</p>
+        </div>
+      </div>
+
+      <!--  Holistic -->
+      <div class="project">
+        <img src="images/Neurips2023_1.jpg" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">A Holistic Approach to Unifying Automatic Concept Extraction and Concept Importance Estimation</div>
+          <div class="authors">T. Fel*, V. Boutin*, M. Moayeri, R. Cadène, L. Bethune, M. Chalvidal, T. Serre</div>
+          <div class="conference"> NeurIPS 2023 (Spotlight)</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2306.07304">Paper</a>
+            <a href="https://serre-lab.github.io/Lens/">Website</a>
+          </div>
+          <p class="resume">In this article we demonstrate that all concept extraction methods can be viewed as dictionary
+            learning methods. We leverage this common framework to develop a comprehensive framework for comparing and i
+            mproving concept extraction methods. Furthermore, we extensively investigate the estimation of concept
+            importance and show that it is possible to determine optimal importance estimation formulas in certain cases.
+            We also highlight the significance of local concept importance in addressing a crucial question in Explainable
+            Artificial Intelligence (XAI): identifying data points classified based on similar reasons.</p>
+        </div>
+      </div>
+
+      <!--  Maco -->
+      <div class="project">
+        <img src="images/Neurips2023_2.jpg" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Unlocking Feature Visualization for Deeper Networks with Magnitude Constrained Optimization</div>
+          <div class="authors">T. Fel*, T. Boissin*, V. Boutin*, A. Picard*, P. Novello*, J. Colin, D. Linsley, T. Rousseau, R. Cadène, L. Gardes, T. Serre</div>
+          <div class="conference">NeurIPS 2023</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2306.07304">Paper</a>
+            <a href="https://serre-lab.github.io/Lens/">Website</a>
+            <a href="https://github.com/serre-lab/Horama">Code</a>
+          </div>
+          <p class="resume">Since the remarkable work of Chris Olah and the Clarity team at OpenAI, feature visualization
+            techniques have stagnated since 2017, and the methods proposed at the time are very difficult to make work on
+            modern models (e.g. Vision Transformers). In this article, we propose a simple technique to revive feature
+            visualization on modern models. Our method is based on a magnitude constraint, which ensures that the generated
+            images have a magnitude similar to real images while avoiding the need for managing an additional hyperparameter.</p>
+        </div>
+      </div>
+
+      <!--  Diversity vs. Recognizability -->
+      <div class="project">
+        <img src="images/Neurips2022.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Diversity vs. Recognizability: Human-like generalization in one-shot generative models</div>
+          <div class="authors">V. Boutin*, L. Singhal, X. Thomas, T. Serre</div>
           <div class="conference">NeurIPS 2022</div>
           <div class="links">
             <a href="https://arxiv.org/abs/2205.10370">Paper</a>
             <a href="https://github.com/serre-lab/diversity_vs_recognizability">Code</a>
           </div>
-          <p class="resume">Robust generalization to new concepts has long remained...</p>
+          <p class="resume">Here, we propose a new framework to evaluate one-shot generative models
+            along two axes: sample recognizability vs. diversity (ie, intra-class variability).
+            Using this framework, we perform a systematic evaluation of representative one-shot generative models
+            on the Omniglot handwritten dataset. We show that GAN-like and VAE-like models fall on opposite
+            ends of the diversity-recognizability space. Using the diversity-recognizability
+            framework, we were able to identify models and parameters that closely approximate human data.</p>
+        </div>
+      </div>
+
+           <!--  Pooling strategies in V1 can account for the functional and structural diversity across species-->
+      <div class="project">
+        <img src="images/PlosCB2022.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Pooling strategies in V1 can account for the functional and structural diversity across species</div>
+          <div class="authors">V. Boutin*, A. Franciosini, F. Chavane, L. Perrinet</div>
+          <div class="conference">Plos Computational Biology (2022)</div>
+          <div class="links">
+            <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010270">Paper</a>
+
+          </div>
+          <p class="resume"> V1 neurons are orientation-selective with varying phase selectivity (simple → complex).
+            Prior models tie phase invariance to orientation maps in higher mammals but can’t explain complex cells in
+            species without maps. Using a convolutional Sparse Deep Predictive Coding (SDPC) model, we show a single
+            mechanism—pooling—accounts for both: pooling in feature space drives orientation map formation, while
+            pooling in retinotopic space yields complex-cell invariance. SDPC thus explains complex cells with or
+            without orientation maps and offers a unified account of V1’s structural and functional diversity.
+          </p>
+        </div>
+      </div>
+
+
+            <!--  Sparse Deep Predictive Coding captures contour integration capabilities of the early visual cortex-->
+      <div class="project">
+        <img src="images/PlosCB2021.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Sparse Deep Predictive Coding captures contour integration capabilities of the early visual cortex</div>
+          <div class="authors">V. Boutin*, A. Franciosini, F. Chavane, F. Ruffier, L. Perrinet</div>
+          <div class="conference">Plos Computational Biology (2021)</div>
+          <div class="links">
+            <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008629">Paper</a>
+            <a href="https://github.com/VictorBoutin/InteractionMap">Code</a>
+          </div>
+          <p class="resume"> Recurrent/feedback connections shape context in early vision, but most models split neural
+            vs. representational effects. Sparse Deep Predictive Coding (SDPC) unifies them: Sparse Coding handles
+            intralayer recurrence; Predictive Coding mediates interlayer feedforward/feedback in a hierarchical convnet.
+            Trained as a 2-layer V1/V2 proxy, SDPC learns V1-like oriented RFs and more complex V2 features; feedback
+            reorganizes V1 interaction maps (association fields/“good continuation”), promoting contour integration.
+            The same feedback boosts robustness to noise/blur and improves reconstructions—linking neural- and
+            representation-level feedback in one model.
+          </p>
+        </div>
+      </div>
+
+      <!--  Iterative VAE-->
+      <div class="project">
+        <img src="images/NeuripsWorkshop2020.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Iterative VAE as a predictive brain model for out-of-distribution generalization</div>
+          <div class="authors">V. Boutin*, A. Zerroug, M. Jung, T. Serre</div>
+          <div class="conference">Workshops Shared Visual Representations in Human and Machine Intelligence at NeurIPS 2020</div>
+          <div class="links">
+            <a href="https://arxiv.org/abs/2012.00557">Paper</a>
+            <a href="https://github.com/serre-lab/prj_probcod">Code</a>
+          </div>
+          <p class="resume">Primate vision generalizes to novel degradations. We link predictive coding networks (PCNs)
+            to variational autoencoders (VAEs), deriving a formal correspondence. This motivates iterative VAEs (iVAEs)
+            as a variational counterpart to PCNs. iVAEs show markedly better OOD generalization than PCNs and standard
+            VAEs. We also introduce a per-sample recognizability metric testable via psychophysics, positioning iVAEs
+            as a promising neuroscience model.</p>
+        </div>
+      </div>
+
+      <!--  Effect of top-down connections in Hierarchical Sparse Coding-->
+      <div class="project">
+        <img src="images/NeuralComp.png" alt="Project image" width="280">
+        <div class="project-info">
+          <div class="title">Effect of top-down connections in Hierarchical Sparse Coding</div>
+          <div class="authors">V. Boutin*, A. Franciosini, F. Ruffier, L. Perrinet</div>
+          <div class="conference">Neural Computation (2020)</div>
+          <div class="links">
+            <a href="https://laurentperrinet.github.io/publication/boutin-franciosini-ruffier-perrinet-20-feedback/boutin-franciosini-ruffier-perrinet-20-feedback.pdf">Paper</a>
+            <a href="www.github.com/VictorBoutin/SPC_2L/">Code</a>
+          </div>
+          <p class="resume">Hierarchical sparse coding (HSC) is often solved layer-wise,
+            but neuroscience suggests adding top-down feedback (predictive coding). We introduce a two-layer sparse
+            predictive coding model (2L-SPC) and compare it to a two-layer hierarchical Lasso (Hi-La). Across four
+            datasets, 2L-SPC transfers error between layers, yielding lower prediction error, faster inference,
+            and better second-layer representations. It also speeds learning and discovers more generic,
+            larger-extent features.
+          </p>
         </div>
       </div>
 
